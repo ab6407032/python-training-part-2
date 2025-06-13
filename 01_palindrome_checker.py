@@ -11,8 +11,13 @@ Steps:
 4. Print result.
 """
 
-text = "Madam"
-normalized = text.replace(" ", "").lower()
-is_palindrome = normalized == normalized[::-1]
+def is_palindrome(text):
+    normalized = text.replace(" ", "").lower()    # Remove spaces and convert to lowercase
+    return normalized == normalized[::-1]         # Compare with reversed string
 
-print(f"'{text}' is a palindrome:" if is_palindrome else f"'{text}' is not a palindrome.")
+# Example usage
+input_text = "Madam"
+if is_palindrome(input_text):
+    print(f"'{input_text}' is a palindrome.")
+else:
+    print(f"'{input_text}' is not a palindrome.")
