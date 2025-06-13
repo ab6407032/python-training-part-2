@@ -10,15 +10,17 @@ Steps:
 3. Print result.
 """
 
-num = 29
-is_prime = True
-
-if num <= 1:
-    is_prime = False
-else:
+def is_prime(num):
+    if num <= 1:
+        return False
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            is_prime = False
-            break
+            return False
+    return True
 
-print(f"{num} is prime:" if is_prime else f"{num} is not prime.")
+# Example usage
+num = 29
+if is_prime(num):
+    print(f"{num} is prime.")
+else:
+    print(f"{num} is not prime.")
