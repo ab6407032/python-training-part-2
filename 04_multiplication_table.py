@@ -10,6 +10,9 @@ Steps:
 3. Print formatted result.
 """
 
-num = 7
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
+def multiplication_table(num):
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+
+# Example usage
+multiplication_table(7)
