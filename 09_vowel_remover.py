@@ -10,9 +10,12 @@ Steps:
 3. Join and print result.
 """
 
-text = "Beautiful Day"
-vowels = "aeiouAEIOU"
-no_vowels = ''.join([ch for ch in text if ch not in vowels])
+def remove_vowels(text):
+    vowels = "aeiouAEIOU"
+    no_vowels = ''.join([ch for ch in text if ch not in vowels])
+    return no_vowels
 
+# Example usage
+text = "Beautiful Day"
 print("Original:", text)
-print("Without vowels:", no_vowels)
+print("Without vowels:", remove_vowels(text))
