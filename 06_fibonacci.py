@@ -10,11 +10,15 @@ Steps:
 3. Print all terms.
 """
 
-n = 10
-a, b = 0, 1
+def fibseq(n):
+    a = 0
+    b = 1
 
-print("Fibonacci sequence:")
-for _ in range(n):
-    print(a, end=' ')
-    a, b = b, a + b
-print()
+    print("Fibonacci sequence:")
+    for _ in range(n):
+        print(a, end=' ')
+        temp = a       # Save current a
+        a = b          # Move b to a
+        b = temp + b   # Use saved a to compute new b
+
+    print()
