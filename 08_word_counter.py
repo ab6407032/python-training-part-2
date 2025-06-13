@@ -9,7 +9,10 @@ Steps:
 2. Use len() to count words.
 """
 
-sentence = "This is a sample sentence"
-word_count = len(sentence.split())
+def count_words(sentence):
+    word_count = len(sentence.split())  # Split by spaces and count parts
+    return word_count
 
-print("Number of words:", word_count)
+# Example usage
+sentence = "This is a sample sentence"
+print("Number of words:", count_words(sentence))
