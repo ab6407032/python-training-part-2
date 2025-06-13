@@ -10,7 +10,12 @@ Steps:
 3. Print result.
 """
 
-number = 12345
-total = sum(int(digit) for digit in str(number))
-
-print(f"Sum of digits of {number} is {total}")
+def sum_of_digits(number):
+    total = 0 #3
+    for digit in str(number): #123 (1) 1
+        total += int(digit) # 1 + 2
+    return total
+    
+r = sum_of_digits(123)
+print(r)
+    
