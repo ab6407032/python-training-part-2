@@ -11,9 +11,13 @@ Steps:
 4. Print result.
 """
 
-n = 5
-fact = 1
-for i in range(1, n+1):
-    fact *= i
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
 
-print(f"Factorial of {n} is {fact}")
+# Example usage
+n = 5
+result = factorial(n)
+print(f"Factorial of {n} is {result}")
